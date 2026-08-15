@@ -45,7 +45,7 @@ export function Button({
     .join(" ");
 
   if (props.as === "a") {
-    const { as: _a, variant: _v, size: _s, ...rest } = props as ButtonAsAnchor;
+    const { as: _as, ...rest } = props as ButtonAsAnchor;
     return (
       <a className={classes} {...rest}>
         {children}
@@ -53,7 +53,7 @@ export function Button({
     );
   }
 
-  const { as: _a, variant: _v, size: _s, ...rest } = props as ButtonAsButton;
+  const { as: _as, ...rest } = props as ButtonAsButton;
   return (
     <button className={classes} {...rest}>
       {children}
