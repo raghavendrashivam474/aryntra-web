@@ -164,34 +164,34 @@ Development
 
 Install dependencies:
 
-
+```BASH
 
 pnpm install
 
-
+```
 
 Run the development server:
 
-
+```BASH
 
 pnpm dev
 
-
+```
 
 Build for production:
 
-
+```BASH
 
 pnpm build
 
-
+```
 
 Run lint:
 
-
+```BASH
 
 pnpm lint
-
+```
 Architecture Principles
 
 Stable contracts, replaceable implementations
