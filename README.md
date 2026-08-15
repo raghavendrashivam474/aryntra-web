@@ -164,7 +164,7 @@ Development
 
 Install dependencies:
 
-```BASH
+```Powershell
 
 pnpm install
 
@@ -172,7 +172,7 @@ pnpm install
 
 Run the development server:
 
-```BASH
+```Powershell
 
 pnpm dev
 
@@ -180,7 +180,7 @@ pnpm dev
 
 Build for production:
 
-```BASH
+```Powershell
 
 pnpm build
 
@@ -188,10 +188,11 @@ pnpm build
 
 Run lint:
 
-```BASH
+```Powershell
 
 pnpm lint
 ```
+```text 
 Architecture Principles
 
 Stable contracts, replaceable implementations
@@ -228,7 +229,8 @@ Aryntra Web is not intended to be a static company brochure.
 
 It will gradually evolve alongside the company and its systems.
 
-
+```
+```text
 
 Repository Status
 
@@ -241,7 +243,7 @@ Current phase:
 M0.2 — Complete
 
 
-
+```
 Next milestones will be defined based on the actual evolution of Aryntra rather than a fixed long-term feature list.
 
 
