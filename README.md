@@ -134,6 +134,8 @@ aryntra-web/
 
 &#x20;   └── workflows/
 
+```
+
 
 
 The packages/\* directories are intentionally kept lightweight. A package should only be introduced when genuine cross-application reuse exists.
