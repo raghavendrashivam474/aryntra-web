@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   description:
     "Aryntra builds intelligent systems that help people understand, reason, decide, build, and create. India's Intelligent Decision Layer.",
   metadataBase: new URL("https://aryntra.com"),
+  alternates: {
+    canonical: "https://aryntra.com",
+  },
   openGraph: {
     title: "Aryntra — India's Intelligent Decision Layer",
     description:
@@ -27,16 +30,29 @@ export const metadata: Metadata = {
     siteName: "Aryntra",
     locale: "en_IN",
     type: "website",
+    images: [
+      {
+        url: "/og",
+        width: 1200,
+        height: 630,
+        alt: "Aryntra — India's Intelligent Decision Layer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aryntra — India's Intelligent Decision Layer",
     description:
       "Aryntra builds intelligent systems that help people understand, reason, decide, build, and create.",
+    images: ["/og"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
 };
 
@@ -47,7 +63,7 @@ export default function RootLayout({
 }) {
   return (
     <html
-      lang="en"
+      lang="en-IN"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-background text-foreground">
