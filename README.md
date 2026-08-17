@@ -236,15 +236,24 @@ Repository Status
 
 
 
-Current phase:
+## Current Phase
 
+### M0.4 — Production Deployment & Custom Domain
 
+**Status: Complete — `aryntra.com` is live**
 
-M0.2 — Complete
+The Aryntra website is publicly accessible at [aryntra.com](https://aryntra.com).
 
+Previous milestones:
+
+- M0.1 — Repository Foundation — Complete
+- M0.2 — Architecture Foundation & Phase 0 Landing Experience — Complete
+- M0.3 — Company Identity & Production Polish — Complete
+- M0.4 — Production Deployment & Custom Domain — Complete
+
+See [`docs/decisions/`](docs/decisions/) for completion reports.
 
 ```
-Next milestones will be defined based on the actual evolution of Aryntra rather than a fixed long-term feature list.
 
 
 
