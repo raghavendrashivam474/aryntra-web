@@ -8,6 +8,7 @@ export function Hero() {
       aria-labelledby="hero-heading"
       className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden pt-16"
     >
+      {/* Grid background */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
@@ -20,6 +21,7 @@ export function Hero() {
         }}
       />
 
+      {/* Accent glow */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full"
@@ -37,13 +39,17 @@ export function Hero() {
 
           <h1
             id="hero-heading"
-            className="max-w-4xl text-5xl font-semibold leading-[1.1] tracking-tight text-foreground sm:text-6xl md:text-7xl lg:text-8xl"
+            className="max-w-4xl font-semibold leading-[1.1] tracking-tight text-foreground"
+            style={{ fontSize: "var(--text-display)" }}
           >
             India&apos;s Intelligent{" "}
             <span className="text-muted">Decision Layer</span>
           </h1>
 
-          <p className="max-w-xl text-base leading-relaxed text-muted md:text-lg">
+          <p
+            className="max-w-xl leading-relaxed text-muted"
+            style={{ fontSize: "var(--text-subhead)" }}
+          >
             {positioning.shortDescription}
           </p>
 
@@ -52,12 +58,13 @@ export function Hero() {
               Explore Aryntra
             </Button>
             <Button as="a" href="#exploration" variant="ghost" size="md">
-              What we are building
+              Areas of exploration
             </Button>
           </div>
         </div>
       </Container>
 
+      {/* Scroll indicator */}
       <div
         aria-hidden="true"
         className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-subtle"
