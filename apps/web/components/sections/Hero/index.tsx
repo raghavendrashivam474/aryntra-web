@@ -31,7 +31,7 @@ export function Hero() {
         }}
       />
 
-      <Container as="section">
+      <Container>
         <div className="relative flex flex-col items-center gap-8 text-center">
           <span className="text-xs font-medium tracking-[0.3em] text-muted uppercase">
             {positioning.name}

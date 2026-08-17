@@ -8,7 +8,7 @@ export function DecisionLayer() {
       aria-labelledby="decision-layer-heading"
       className="py-32 md:py-40 border-t border-border"
     >
-      <Container as="section">
+      <Container>
         <p className="mb-6 text-xs font-medium tracking-[0.3em] text-muted uppercase">
           The Intelligent Decision Layer
         </p>

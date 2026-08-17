@@ -8,7 +8,7 @@ export function Introduction() {
       aria-labelledby="introduction-heading"
       className="py-32 md:py-40"
     >
-      <Container as="section">
+      <Container>
         <div className="grid grid-cols-1 gap-16 md:grid-cols-2 md:gap-24">
           <div className="flex flex-col gap-6">
             <h2

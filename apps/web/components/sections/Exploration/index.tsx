@@ -8,7 +8,7 @@ export function Exploration() {
       aria-labelledby="exploration-heading"
       className="py-32 md:py-40 border-t border-border"
     >
-      <Container as="section">
+      <Container>
         <div className="mb-16 flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
           <div className="flex flex-col gap-4">
             <p className="text-xs font-medium tracking-[0.3em] text-muted uppercase">

@@ -8,7 +8,7 @@ export function Future() {
       aria-labelledby="future-heading"
       className="py-32 md:py-40 border-t border-border"
     >
-      <Container as="section">
+      <Container>
         <div className="flex flex-col items-center gap-8 text-center">
           <p className="text-xs font-medium tracking-[0.3em] text-muted uppercase">
             What comes next
