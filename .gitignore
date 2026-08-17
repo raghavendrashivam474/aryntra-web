@@ -59,3 +59,7 @@ $RECYCLE.BIN/
 repo-tree.txt
 *.tmp
 *.temp
+
+# Local audit output
+*-output.txt
+web.txt
