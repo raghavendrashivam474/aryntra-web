@@ -12,6 +12,10 @@
   --color-accent:       #6366f1;
   --color-accent-dim:   #4338ca;
   --color-accent-glow:  rgba(99, 102, 241, 0.12);
+
+  /* Typography scale */
+  --text-display:       clamp(2.5rem, 6vw, 5rem);
+  --text-subhead:       clamp(1.0625rem, 1.5vw, 1.25rem);
 }
 
 @theme inline {
