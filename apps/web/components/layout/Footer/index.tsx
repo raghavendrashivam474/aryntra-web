@@ -3,6 +3,8 @@ import { positioning } from "@/content/company/positioning";
 import Link from "next/link";
 
 export function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer role="contentinfo" className="border-t border-border mt-32">
       <Container as="div">
@@ -26,13 +28,21 @@ export function Footer() {
                   Home
                 </Link>
               </li>
+              <li>
+                <a
+                  href="mailto:hello@aryntra.com"
+                  className="hover:text-foreground transition-colors duration-200"
+                >
+                  Contact
+                </a>
+              </li>
             </ul>
           </nav>
         </div>
 
         <div className="border-t border-border-light py-6">
           <p className="text-xs text-subtle">
-            &copy; {positioning.year} {positioning.name}. All rights reserved.
+            &copy; {year} {positioning.name}. All rights reserved.
           </p>
         </div>
       </Container>

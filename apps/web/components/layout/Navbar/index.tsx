@@ -16,15 +16,18 @@ export function Navbar() {
           <Link
             href="/"
             aria-label="Aryntra — return to homepage"
-            className="text-sm font-semibold tracking-[0.2em] text-foreground uppercase"
+            className="text-sm font-semibold tracking-[0.2em] text-foreground uppercase hover:text-muted transition-colors duration-200"
           >
             Aryntra
           </Link>
 
           <div className="flex items-center gap-6">
-            <span className="text-xs tracking-widest text-muted uppercase select-none">
-              Phase 0
-            </span>
+            <a
+              href="mailto:hello@aryntra.com"
+              className="text-xs tracking-widest text-muted uppercase hover:text-foreground transition-colors duration-200"
+            >
+              Contact
+            </a>
           </div>
         </nav>
       </Container>
