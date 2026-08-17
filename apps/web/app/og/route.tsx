@@ -79,7 +79,7 @@ export function GET(_request: NextRequest) {
               color: "#fafafa",
             }}
           >
-            <span>India's Intelligent</span>
+            <span>India&apos;s Intelligent</span>
             <span style={{ color: "#71717a" }}>Decision Layer</span>
           </div>
 
