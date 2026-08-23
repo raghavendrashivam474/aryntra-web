@@ -1,0 +1,89 @@
+{
+  "id": "hire-001",
+  "description": "Hire a senior backend engineer for a 12-person Series A startup. Must ship core API rewrite within 2 months. Budget capped at $160k base.",
+  "context": {
+    "companyStage": "Series A",
+    "teamSize": 12,
+    "engineeringTeamSize": 5,
+    "budgetBaseSalaryUSD": 160000,
+    "urgencyMonths": 2,
+    "techStack": "Go, PostgreSQL, Kubernetes",
+    "remotePolicy": "hybrid-3days"
+  },
+  "constraints": [
+    {
+      "id": "technical-depth",
+      "label": "Deep Backend Systems Experience (Go/PostgreSQL)",
+      "weight": 5,
+      "description": "Must be able to architect and ship a high-throughput API rewrite in Go with PostgreSQL from day one."
+    },
+    {
+      "id": "leadership",
+      "label": "Can Mentor Junior Engineers",
+      "weight": 4,
+      "description": "Team has 3 junior engineers. This hire must elevate the team, not just write code."
+    },
+    {
+      "id": "salary-budget",
+      "label": "Base Salary <= $160k",
+      "weight": 4,
+      "description": "Series A runway is tight. Base compensation must not exceed $160k."
+    },
+    {
+      "id": "start-date",
+      "label": "Can Start Within 4 Weeks",
+      "weight": 5,
+      "description": "The API rewrite must begin within 2 months. A 3-month notice period would miss the window."
+    },
+    {
+      "id": "cultural-fit",
+      "label": "Comfortable With Ambiguity and Small-Team Chaos",
+      "weight": 3,
+      "description": "Startup environment. Requirements shift weekly. Must thrive without rigid processes."
+    },
+    {
+      "id": "domain-knowledge",
+      "label": "Fintech or Payments Domain Experience",
+      "weight": 2,
+      "description": "Nice to have. The product handles payment processing. Domain familiarity reduces ramp-up."
+    }
+  ],
+  "options": [
+    {
+      "id": "candidate-a",
+      "label": "Candidate A - Senior Go Engineer at Stripe (7 YOE)",
+      "capabilities": [
+        { "constraintId": "technical-depth", "satisfaction": "PASS", "note": "7 years in Go. Built payment processing pipelines at Stripe. Deep PostgreSQL experience." },
+        { "constraintId": "leadership", "satisfaction": "PARTIAL", "note": "Has mentored 2 junior engineers informally. No formal tech lead experience. Willing but untested." },
+        { "constraintId": "salary-budget", "satisfaction": "FAIL", "note": "Current comp is $195k base. Expects at least $185k. Significantly over budget." },
+        { "constraintId": "start-date", "satisfaction": "PARTIAL", "note": "Has a 4-week notice period at Stripe. Could potentially negotiate to 3 weeks but not guaranteed." },
+        { "constraintId": "cultural-fit", "satisfaction": "PARTIAL", "note": "Coming from a large, well-structured engineering org. Enthusiastic about startup life but untested." },
+        { "constraintId": "domain-knowledge", "satisfaction": "PASS", "note": "3 years on Stripe payments team. Deep fintech domain knowledge." }
+      ]
+    },
+    {
+      "id": "candidate-b",
+      "label": "Candidate B - Backend Lead at Series B Startup (5 YOE)",
+      "capabilities": [
+        { "constraintId": "technical-depth", "satisfaction": "PASS", "note": "5 years backend, last 3 in Go. Led API rewrite at current startup from monolith to microservices." },
+        { "constraintId": "leadership", "satisfaction": "PASS", "note": "Currently leads a team of 4 engineers. Conducts code reviews, runs architecture sessions, mentors actively." },
+        { "constraintId": "salary-budget", "satisfaction": "PASS", "note": "Currently at $135k. Asking $155k. Within budget with room for equity negotiation." },
+        { "constraintId": "start-date", "satisfaction": "PASS", "note": "2-week notice period. Can start within 3 weeks." },
+        { "constraintId": "cultural-fit", "satisfaction": "PASS", "note": "Currently at a 20-person startup. Comfortable with ambiguity and shifting priorities." },
+        { "constraintId": "domain-knowledge", "satisfaction": "PARTIAL", "note": "Current startup is in logistics, not fintech. Understands transactional systems but no direct payments experience." }
+      ]
+    },
+    {
+      "id": "candidate-c",
+      "label": "Candidate C - Staff Engineer at Big Tech (10 YOE)",
+      "capabilities": [
+        { "constraintId": "technical-depth", "satisfaction": "PASS", "note": "10 years backend. Expert in distributed systems. Go is one of several languages. PostgreSQL at massive scale." },
+        { "constraintId": "leadership", "satisfaction": "PASS", "note": "Staff-level. Has led cross-team initiatives of 15+ engineers. Strong mentorship track record." },
+        { "constraintId": "salary-budget", "satisfaction": "FAIL", "note": "Current total comp is $320k. Base expectation is $180k+. Over budget." },
+        { "constraintId": "start-date", "satisfaction": "FAIL", "note": "Requires 6-week notice plus planned 3-week vacation. Earliest start is 9 weeks out. Misses the window." },
+        { "constraintId": "cultural-fit", "satisfaction": "FAIL", "note": "Entire career at companies with 10,000+ employees. Interview signals suggest discomfort with lack of process." },
+        { "constraintId": "domain-knowledge", "satisfaction": "PASS", "note": "Worked on a payments platform at Big Tech for 2 years. Understands compliance and ledger design." }
+      ]
+    }
+  ]
+}
