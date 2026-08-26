@@ -1,4 +1,5 @@
 ﻿import { Container } from "@/components/ui/Container";
+import { contactEmail } from "@/content/company/presence";
 import Link from "next/link";
 
 export function Navbar() {
@@ -23,7 +24,7 @@ export function Navbar() {
 
           <div className="flex items-center gap-6">
             <a
-              href="mailto:hello@aryntra.com"
+              href={contactEmail.href}
               className="text-xs tracking-widest text-muted uppercase hover:text-foreground transition-colors duration-200"
             >
               Contact
