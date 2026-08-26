@@ -4,6 +4,7 @@ import { Hero } from "@/components/sections/Hero";
 import { Introduction } from "@/components/sections/Introduction";
 import { DecisionLayer } from "@/components/sections/DecisionLayer";
 import { Exploration } from "@/components/sections/Exploration";
+import { Research } from "@/components/sections/Research";
 import { Future } from "@/components/sections/Future";
 
 export default function HomePage() {
@@ -15,6 +16,7 @@ export default function HomePage() {
         <Introduction />
         <DecisionLayer />
         <Exploration />
+        <Research />
         <Future />
       </main>
       <Footer />
