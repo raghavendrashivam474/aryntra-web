@@ -18,14 +18,14 @@ export function Navbar() {
           <Link
             href="/"
             aria-label="Aryntra — return to homepage"
-            className="flex items-center gap-2.5 text-sm font-semibold tracking-[0.2em] text-foreground uppercase hover:text-muted transition-colors duration-200"
+            className="flex items-center gap-3 text-base sm:text-lg font-semibold tracking-[0.2em] text-foreground uppercase hover:text-muted transition-colors duration-200"
           >
             <Image
               src="/brand/aryntra-symbol.png"
               alt=""
-              width={24}
-              height={24}
-              className="h-6 w-6 shrink-0 object-contain"
+              width={36}
+              height={36}
+              className="h-7 w-7 sm:h-8 sm:w-8 shrink-0 object-contain"
               priority
             />
             <span>Aryntra</span>

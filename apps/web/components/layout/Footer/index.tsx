@@ -68,16 +68,16 @@ export function Footer() {
       <Container as="div">
         <div className="flex flex-col gap-10 py-16 md:flex-row md:items-start md:justify-between">
           {/* Brand Identity */}
-          <div className="flex flex-col gap-2.5">
-            <div className="flex items-center gap-2.5">
+          <div className="flex flex-col gap-3">
+            <div className="flex items-center gap-3">
               <Image
                 src="/brand/aryntra-symbol.png"
                 alt=""
-                width={20}
-                height={20}
-                className="h-5 w-5 shrink-0 object-contain opacity-90"
+                width={32}
+                height={32}
+                className="h-6 w-6 sm:h-7 sm:w-7 shrink-0 object-contain opacity-95"
               />
-              <span className="text-sm font-semibold tracking-[0.2em] text-foreground uppercase">
+              <span className="text-base font-semibold tracking-[0.2em] text-foreground uppercase">
                 {positioning.name}
               </span>
             </div>
