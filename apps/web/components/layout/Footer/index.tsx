@@ -73,9 +73,9 @@ export function Footer() {
               <Image
                 src="/brand/aryntra-symbol.png"
                 alt=""
-                width={32}
-                height={32}
-                className="h-6 w-6 sm:h-7 sm:w-7 shrink-0 object-contain opacity-95"
+                width={35}
+                height={35}
+                className="h-[35px] w-[35px] shrink-0 object-contain opacity-95"
               />
               <span className="text-base font-semibold tracking-[0.2em] text-foreground uppercase">
                 {positioning.name}

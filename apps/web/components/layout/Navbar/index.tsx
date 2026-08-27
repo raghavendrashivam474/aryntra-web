@@ -23,9 +23,9 @@ export function Navbar() {
             <Image
               src="/brand/aryntra-symbol.png"
               alt=""
-              width={36}
-              height={36}
-              className="h-7 w-7 sm:h-8 sm:w-8 shrink-0 object-contain"
+              width={35}
+              height={35}
+              className="h-[35px] w-[35px] shrink-0 object-contain"
               priority
             />
             <span>Aryntra</span>
