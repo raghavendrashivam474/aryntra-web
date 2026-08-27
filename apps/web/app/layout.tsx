@@ -22,6 +22,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://aryntra.com",
   },
+  icons: {
+    icon: "/brand/aryntra-symbol.png",
+    apple: "/brand/aryntra-symbol.png",
+  },
   openGraph: {
     title: "Aryntra — India's Intelligent Decision Layer",
     description:

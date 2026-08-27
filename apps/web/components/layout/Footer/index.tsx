@@ -1,6 +1,7 @@
 ﻿import { Container } from "@/components/ui/Container";
 import { positioning } from "@/content/company/positioning";
 import { contactEmail, socialLinks } from "@/content/company/presence";
+import Image from "next/image";
 import Link from "next/link";
 
 function InstagramIcon({ className = "w-4 h-4" }: { className?: string }) {
@@ -67,10 +68,19 @@ export function Footer() {
       <Container as="div">
         <div className="flex flex-col gap-10 py-16 md:flex-row md:items-start md:justify-between">
           {/* Brand Identity */}
-          <div className="flex flex-col gap-2">
-            <span className="text-sm font-semibold tracking-[0.2em] text-foreground uppercase">
-              {positioning.name}
-            </span>
+          <div className="flex flex-col gap-2.5">
+            <div className="flex items-center gap-2.5">
+              <Image
+                src="/brand/aryntra-symbol.png"
+                alt=""
+                width={20}
+                height={20}
+                className="h-5 w-5 shrink-0 object-contain opacity-90"
+              />
+              <span className="text-sm font-semibold tracking-[0.2em] text-foreground uppercase">
+                {positioning.name}
+              </span>
+            </div>
             <span className="text-xs text-muted max-w-xs leading-relaxed">
               {positioning.tagline}
             </span>
