@@ -44,6 +44,16 @@ export const researchProjects: readonly ResearchProject[] = [
     href: null,
     hrefLabel: null,
   },
+  {
+    id: "madhav",
+    name: "Madhav",
+    category: "Evidence Architecture",
+    status: "Research / Implementation",
+    description:
+      "Research into evidence-oriented systems: investigating how resolution, provenance, retrieval, and measurable quality can form the foundation of reliable intelligence.",
+    href: null,
+    hrefLabel: null,
+  },
 ] as const;
 
 export const researchMeta = {
@@ -51,4 +61,15 @@ export const researchMeta = {
   title: "What Aryntra is researching.",
   description:
     "Beyond conceptual exploration, Aryntra conducts targeted research experiments into reasoning, continuity, and reliable system state.",
+} as const;
+
+export const researchHorizon = {
+  id: "madhav-horizon",
+  name: "Madhav",
+  subtitle: "A Research Direction",
+  shortDescription:
+    "A longer-term exploration into evidence, knowledge, retrieval, resolution, and reasoning systems.",
+  expandedDescription:
+    "Some of our current research points toward larger systems. Madhav represents an emerging direction: investigating how evidence-oriented foundations—resolution, provenance, retrieval, and measurable quality—might support more reliable intelligence systems. This remains early research; current validation focuses on core mechanisms rather than full system integration.",
+  exploreLabel: "Explore the direction",
 } as const;

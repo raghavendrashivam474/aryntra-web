@@ -1,7 +1,12 @@
-﻿import { Container } from "@/components/ui/Container";
-import { researchProjects, researchMeta } from "@/content/company/research";
+﻿'use client';
+
+import { useState } from 'react';
+import { Container } from "@/components/ui/Container";
+import { researchProjects, researchMeta, researchHorizon } from "@/content/company/research";
 
 export function Research() {
+  const [expandedHorizon, setExpandedHorizon] = useState(false);
+
   return (
     <section
       id="research"
@@ -30,7 +35,7 @@ export function Research() {
         {/* Project Grid */}
         <ul
           aria-label="Aryntra active research projects"
-          className="grid grid-cols-1 gap-px border border-border bg-border lg:grid-cols-3"
+          className="grid grid-cols-1 gap-px border border-border bg-border lg:grid-cols-4"
         >
           {researchProjects.map((project, index) => (
             <li
@@ -82,6 +87,62 @@ export function Research() {
             </li>
           ))}
         </ul>
+
+        {/* BEYOND THE PROTOTYPES */}
+        <div className="mt-24 pt-24 border-t border-border">
+          <div className="mb-16 flex flex-col gap-6">
+            <div className="flex flex-col gap-4">
+              <p className="text-xs font-medium tracking-[0.3em] text-muted uppercase">
+                Beyond the Prototypes
+              </p>
+              <h3 className="max-w-xl text-2xl font-semibold leading-tight tracking-tight text-foreground">
+                Some experiments point toward larger systems.
+              </h3>
+            </div>
+          </div>
+
+          {/* Horizon Block */}
+          <div className="max-w-2xl">
+            <div className="flex flex-col justify-between bg-surface border border-border p-8 transition-colors duration-200 hover:bg-surface-2">
+              <div className="flex flex-col gap-4">
+                <div className="flex flex-col gap-1">
+                  <h4 className="text-lg font-semibold tracking-tight text-foreground">
+                    {researchHorizon.name}
+                  </h4>
+                  <p className="text-xs font-mono tracking-wider uppercase text-muted">
+                    {researchHorizon.subtitle}
+                  </p>
+                </div>
+
+                <p className="text-sm leading-relaxed text-muted">
+                  {researchHorizon.shortDescription}
+                </p>
+
+                {/* Expanded Section */}
+                {expandedHorizon && (
+                  <div className="mt-4 p-4 bg-surface-2 border border-border/60 rounded">
+                    <p className="text-sm leading-relaxed text-muted">
+                      {researchHorizon.expandedDescription}
+                    </p>
+                  </div>
+                )}
+              </div>
+
+              {/* Explore Button */}
+              <div className="mt-8 border-t border-border/60 pt-4">
+                <button
+                  onClick={() => setExpandedHorizon(!expandedHorizon)}
+                  className="text-xs font-mono tracking-wider uppercase text-foreground hover:text-muted transition-colors focus-visible:outline focus-visible:outline-1 focus-visible:outline-foreground flex items-center gap-2"
+                  aria-expanded={expandedHorizon}
+                  aria-controls="madhav-horizon-expanded"
+                >
+                  <span aria-hidden="true">◇</span>
+                  {expandedHorizon ? 'Collapse' : researchHorizon.exploreLabel}
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
       </Container>
     </section>
   );
