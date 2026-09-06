@@ -64,7 +64,7 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer role="contentinfo" className="border-t border-border mt-32">
+    <footer id="contact" role="contentinfo" className="border-t border-border mt-32">
       <Container as="div">
         <div className="flex flex-col gap-10 py-16 md:flex-row md:items-start md:justify-between">
           {/* Brand Identity */}
@@ -164,3 +164,4 @@ export function Footer() {
     </footer>
   );
 }
+
